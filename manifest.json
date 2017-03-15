@@ -1,0 +1,32 @@
+{
+  "name": "LinkedIn-Contacts",
+  "version": "0.1",
+  "description": "Getting Contacts from LinkedIn profile",
+  "content_scripts": [
+    {
+      "run_at": "document_start",
+      "matches": ["https://www.linkedin.com/*"],
+      "js": [
+        "js/jquery-1.10.2.min.js",
+        "js/content.js"
+      ],
+      "css": [
+        "css/content.css"
+      ],
+      "all_frames": true
+    }
+  ],
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "background": {
+    "scripts": [
+      "js/jquery-1.10.2.min.js",
+      "js/background.js"
+    ]
+  },
+  "web_accessible_resources": [
+  ],
+  "manifest_version": 2
+}
