@@ -4,7 +4,7 @@
   "description": "Getting Contacts from LinkedIn profile",
   "content_scripts": [
     {
-      "run_at": "document_start",
+      "run_at": "document_end",
       "matches": ["https://www.linkedin.com/*"],
       "js": [
         "js/jquery-1.10.2.min.js",
